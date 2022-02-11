@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+.middle{
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+    justify-content: center;
+}
+
+.col-1{
+    min-width: 8.3333%;
+    flex-basis: 8.3333%;
+}
+
+.col-2{
+    min-width: 16.6666%;
+    flex-basis:16.6666%;
+}
+
+.col-3{
+    min-width: 25%;
+    flex-basis: 25%;
+}
+
+.col-4{
+    min-width: 33.3333%;
+    flex-basis: 33.3333%;
+}
+
+.col-5{
+    min-width: 41.6666%;
+    flex-basis: 41.6666%;
+}
+
+.col-6{
+    min-width: 50%;
+    flex-basis: 50%;
+}
+
+.col-7{
+    min-width: 58.3333%;
+    flex-basis: 58.3333%;
+}
+
+.col-8{
+    min-width: 66.6666%;
+    flex-basis: 66.6666%;
+}
+
+.col-9{
+    min-width: 75%;
+    flex-basis: 75%;
+}
+
+.col-10{
+    min-width: 83.3333%;
+    flex-basis: 83.3333%;
+}
+
+.col-11{
+    min-width: 91.6666%;
+    flex-basis: 91.6666%;
+}
+
+.col-12{
+    min-width: 100%;
+    flex-basis: 100%;
+} 
