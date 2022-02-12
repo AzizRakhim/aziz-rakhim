@@ -27,7 +27,7 @@ scrollNavbar = () => {
 }
 
 // HEADER END
-// SEETING MODAL START
+// SETTING MODAL START
 
 let elSettingBtn = document.getElementById("settingBtn");
 let elSettingBox = document.getElementById("settingBox");
