@@ -87,6 +87,10 @@ body{
     color: #fff;
 }
 
+.header__logo-link:hover{
+    color: var(--change-color);
+}
+
 .nav__list{
     list-style: none;
     margin-bottom: 0;
@@ -172,7 +176,7 @@ body{
     display: inline-block;
 }
 
-/* .hero-intro__change{
+.hero-intro__change{
     display: inline-block;
     perspective: 300px;
     width: 174.052px;
@@ -181,18 +185,19 @@ body{
     font-weight: 700;
     color: #fff;
     letter-spacing: -0.2px;
+    position: relative;
 }
 
 .hero-intro__change span{
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: -1000%; */
 }
 
 .is-visible{
     display: inline-block;
     transform-origin: 100% 100%;
     transform: rotateX(0deg);
-    animation: rotate-it 3s linear infinite both;
+    animation: rotate-it 2s linear infinite both;
 }
 
 @keyframes rotate-it{
@@ -210,6 +215,11 @@ body{
         opacity: 0;
     }
 
+    80%{
+        transform: rotateX(180deg);
+        opacity: 0;
+    }
+
     100%{
         transform: rotateX(180deg);
         opacity: 0;
@@ -220,7 +230,9 @@ body{
     display: inline-block;
     transform-origin: 100% 100%;
     transform: rotateX(180deg);
-    animation: rotate-hidden 3s linear infinite both;
+    animation: rotate-hidden 2s linear infinite both;
+    position: absolute;
+    top: 0;
 }
 
 @keyframes rotate-hidden{
@@ -238,11 +250,16 @@ body{
         opacity: 0;
     }
 
+    80%{
+        transform: rotateX(360deg);
+        opacity: 1;
+    }
+
     100%{
         transform: rotateX(360deg);
         opacity: 1;
     }
-} */
+}
 
 .hero-intro__btn-box{
     margin-top: 25px;

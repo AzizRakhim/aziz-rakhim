@@ -51,88 +51,67 @@ let elDarkBlueBtn = document.getElementById("darkBlueBtn");
 let elCrimsonBtn = document.getElementById("crimsonBtn");
 let elClayColorBtn = document.getElementById("clayColorBtn");let elRedBtn = document.getElementById("redBtn");
 let elConvertBox = document.getElementById("convert");
+var elms = document.querySelectorAll("[id='convert']");
 
 elBlueBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
-  for(var i = 0; i < elms.length; i++) 
-    elms[i].classList.add("blue"); 
+    for(var i = 0; i < elms.length; i++) 
+      elms[i].classList.add("blue"); 
 })
 
 elGreenBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("green"); 
 })
 
 elYellowBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("yellow"); 
 })
 
 elPinkBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("pink"); 
 })
 
 elOrangeBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("orange"); 
 })
 
 elBlackBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("black"); 
 })
 
 elPurpleBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("purple"); 
 })
 
 elLightBlueBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("light-blue"); 
 })
 
 elDarkBlueBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("dark-blue"); 
 })
 
 elCrimsonBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("crimson"); 
 })
 
 elClayColorBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("clay-color"); 
 })
 
 elRedBtn.addEventListener("click", function() {
-  var elms = document.querySelectorAll("[id='convert']");
-
   for(var i = 0; i < elms.length; i++) 
     elms[i].classList.add("red"); 
 })
+
+
 
