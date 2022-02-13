@@ -113,5 +113,29 @@ elRedBtn.addEventListener("click", function() {
     elms[i].classList.add("red"); 
 })
 
+// ROOT END
+// REVEL START
+
+ScrollReveal({
+  reset: true,
+  distance: '100px',
+  duration: 2500,
+  delay: 300
+});
+
+ScrollReveal().reveal('.about__left-img, .skill-content', {delay: 200, origin: 'left'});
+
+ScrollReveal().reveal('.about__center, .resume-cover', {delay: 200, origin: 'top'});
+
+ScrollReveal().reveal('.about__right, .skill__stats, .portfolio', {delay: 200, origin: 'bottom'});
+
+ScrollReveal().reveal('.portfolio__item', {delay: 200, origin: 'bottom', interval: 200});
+
+ScrollReveal().reveal('.service__item:nth-child(odd)', {delay: 200, origin: 'left', interval: 200});
+
+ScrollReveal().reveal('.service__item:nth-child(even)', {delay: 200, origin: 'right', interval: 200});
+
+ScrollReveal().reveal('.resume__list-intro', {delay: 200, origin: 'bottom', interval: 300});
+
 
 
