@@ -1,3 +1,21 @@
+// MENU START
+
+let elMenuBtn = document.getElementById("menuBtn");
+let elMenuBox = document.getElementById("menuBox");
+let elIconBtn = document.getElementById("iconBtn");
+let count = 0;
+
+elMenuBtn.addEventListener("click", function() {
+  elMenuBox.classList.toggle("show");
+  if (count == 0){
+    elIconBtn.className = "bx bx-x";
+    count--;
+  } else{
+    elIconBtn.className = "bx bx-menu";
+    count++;
+  }
+})
+
 // HEADER START
 
 window.onscroll = () => {
@@ -8,7 +26,7 @@ scrollNavbar = () => {
   const navBar = document.getElementById("navBar");
   const links = document.querySelectorAll("#navBar a");
 
-  if (document.documentElement.scrollTop > 1) {
+  if (document.documentElement.scrollTop > 0) {
     navBar.classList.add("fixed-header");
 
     for (let i = 0; i < links.length; i++) {
@@ -120,22 +138,26 @@ ScrollReveal({
   reset: true,
   distance: '100px',
   duration: 2500,
-  delay: 300
+  delay: 100
 });
 
-ScrollReveal().reveal('.about__left-img, .skill-content', {delay: 200, origin: 'left'});
+ScrollReveal().reveal('.about__left-img, .skill-content', {delay: 100, origin: 'left'});
 
-ScrollReveal().reveal('.about__center, .resume-cover', {delay: 200, origin: 'top'});
+ScrollReveal().reveal('.about__center, .resume-cover, .blog__appear', {delay: 100, origin: 'top'});
 
-ScrollReveal().reveal('.about__right, .skill__stats, .portfolio', {delay: 200, origin: 'bottom'});
+ScrollReveal().reveal('.about__right, .skill__stats, .portfolio', {delay: 100, origin: 'bottom'});
 
-ScrollReveal().reveal('.portfolio__item', {delay: 200, origin: 'bottom', interval: 200});
+ScrollReveal().reveal('.testimonial__img-holder, .blog__item:first-child', {delay: 100, origin: 'left'});
 
-ScrollReveal().reveal('.service__item:nth-child(odd)', {delay: 200, origin: 'left', interval: 200});
+ScrollReveal().reveal('.testimonial__content, .blog__item:last-child', {delay: 100, origin: 'right'});
 
-ScrollReveal().reveal('.service__item:nth-child(even)', {delay: 200, origin: 'right', interval: 200});
+ScrollReveal().reveal('.portfolio__item', {delay: 100, origin: 'bottom', interval: 100});
 
-ScrollReveal().reveal('.resume__list-intro', {delay: 200, origin: 'bottom', interval: 300});
+ScrollReveal().reveal('.service__item:nth-child(odd)', {delay: 100, origin: 'left', interval: 100});
 
+ScrollReveal().reveal('.service__item:nth-child(even)', {delay: 100, origin: 'right', interval: 100});
 
+ScrollReveal().reveal('.resume__list-intro, .numeral__project', {delay: 100, origin: 'bottom', interval: 300});
+
+// SCROLL REVEAL END
 

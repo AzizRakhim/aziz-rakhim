@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
+
 <body>
     <section id="hero">
         <h1 class="hero__title">
@@ -26,7 +29,7 @@
                         </a>
                     </div>
                     <nav class="header__nav nav">
-                        <ul class="nav__list d-flex align-items-center p-0">
+                        <ul class="nav__list d-flex align-items-center p-0" id="menuBox">
                             <li class="nav__item" id="convert">
                                 <a href="#" class="nav__link nav__link--active">
                                     home
@@ -64,6 +67,9 @@
                             </li>
                         </ul>
                     </nav>
+                    <button class="menu-btn d-flex align-items-center" id="menuBtn">
+                        <i class="bx bx-menu" id="iconBtn"></i>
+                    </button>
                 </div>
             </div>
         </header>
@@ -74,7 +80,7 @@
         <div class="hero-intro">
             <div class="container">
                 <div class="hero-intro__inner d-flex">
-                    <div class="hero-intro__content col-6">
+                    <div class="hero-intro__content">
                         <span class="hero-intro__hello">
                             Hello, I'm
                         </span>
@@ -91,13 +97,13 @@
                                 </span>
                                 <span class="is-hidden">
                                     Freelancer
-                                </span> 
+                                </span>
                             </span>
                         </div>
                         <div class="hero-intro__btn-box btn-box d-flex align-items-center">
                             <div class="btn-box__box">
-                                <a class="btn-box__link" href="#contact" id="convert">
-                                    Say Hello 
+                                <a class="btn-box__link d-flex align-items-center" href="#contact" id="convert">
+                                    Say Hello
                                     <i class='bx bx-envelope'></i>
                                 </a>
                             </div>
@@ -108,15 +114,21 @@
                             </div>
                         </div>
                         <div class="hero-into__mouse">
-                            <svg width="26px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-                                <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#fff;stroke-width:20px;"></path>
-                                <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:#fff;stroke-width:20px;"></path>
+                            <svg width="26px" height="100%" viewBox="0 0 247 390" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                                <path id="wheel" d="M123.359,79.775l0,72.843"
+                                    style="fill:none;stroke:#fff;stroke-width:20px;"></path>
+                                <path id="mouse"
+                                    d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                                    style="fill:none;stroke:#fff;stroke-width:20px;"></path>
                             </svg>
                         </div>
                     </div>
-                    <div class="hero-intro__img-box col-6 d-flex justify-content-end">
+                    <div class="hero-intro__img-box d-flex justify-content-end">
                         <div class="main-img">
-                            <img class="main-photo" src="https://marketifythemes.net/html/aale/img/hero/1.png" alt="my-photo" width="327" height="521">
+                            <img class="main-photo" src="https://marketifythemes.net/html/aale/img/hero/1.png"
+                                alt="my-photo">
                         </div>
                         <div class="bg-img-one">
                             <span id="convert"></span>
@@ -130,6 +142,9 @@
                         <div class="bg-img-four">
                             <span></span>
                         </div>
+                        <div class="bg-img-five">
+                            <span></span>
+                        </div>
                         <h3 class="bg-text">
                             <span class="my-name">
                                 Aziz
@@ -137,28 +152,6 @@
                         </h3>
                     </div>
                 </div>
-            </div>
-            <ul class="social p-0">
-                <li class="social__item" id="convert">
-                    <a href="#" class="social__link">
-                        <i class='bx bxl-facebook'></i>
-                    </a>
-                </li>
-                <li class="social__item" id="convert">
-                    <a href="#" class="social__link">
-                        <i class='bx bxl-twitter'></i>
-                    </a>
-                </li>
-                <li class="social__item" id="convert">
-                    <a href="#" class="social__link">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="fixed-email-box">
-                <a class="fixed-email" href="#">
-                    azizbekrahimjonov80@gmail.com
-                </a>
             </div>
             <div class="setting-box" id="settingBox">
                 <div class="setting-icon" id="settingBtn">
@@ -248,16 +241,38 @@
                 </div>
             </div>
         </div>
+        <ul class="social p-0">
+            <li class="social__item" id="convert">
+                <a href="#" class="social__link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+            </li>
+            <li class="social__item" id="convert">
+                <a href="#" class="social__link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </li>
+            <li class="social__item" id="convert">
+                <a href="#" class="social__link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </li>
+        </ul>
+        <div class="fixed-email-box">
+            <a class="fixed-email" href="#">
+                azizbekrahimjonov80@gmail.com
+            </a>
+        </div>
     </section>
 
     <!-- HERO END -->
-    
+
     <main class="site-main">
         <section id="about">
-            <div class="container">
+            <div class="containefr">
                 <div class="about d-flex justify-content-between">
                     <div class="about__left-img col-3">
-                        <img src="https://marketifythemes.net/html/aale/img/about/1.jpg" alt="about-img" width="273" height="297">
+                        <img src="https://marketifythemes.net/html/aale/img/about/1.jpg" alt="about-img">
                         <span class="about-span" id="convert">
 
                         </span>
@@ -272,7 +287,7 @@
                         <h3 class="about__title">
                             I'm
                             <span class="about__name" id="convert">
-                                Aziz Rakhim
+                                Aziz
                             </span>
                         </h3>
                         <h3 class="about__title">
@@ -282,25 +297,27 @@
                             </span>
                         </h3>
                         <span class="about__location">
-                            Based in Tashkent,Uzbekistan
+                            Based in Tashkent,Uzb
                         </span>
                         <p class="about__text">
-                            Hi! My name is Aziz Rakhim. I am a Web developer, and I'm very passionate and dedicated to my work.
+                            Hi! My name is Aziz Rakhim. I am a Web developer, and I'm very passionate and dedicated to
+                            my work.
                         </p>
                         <p class="about__text about__last-text">
-                            With a half year experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success.
+                            With a half year experience as a professional web developer, I have acquired the skills and
+                            knowledge necessary to make your project a success.
                         </p>
                         <div class="about__link-box">
                             <a class="about__cv" href="#" id="convert">
-                                Download CV 
+                                Download CV
                                 <i class='bx bxs-download'></i>
                             </a>
                         </div>
                     </div>
                     <div class="about__right col-3">
-                        <img src="https://marketifythemes.net/html/aale/img/about/2.jpg" alt="about-img-2" width="247" height="368">
+                        <img src="https://marketifythemes.net/html/aale/img/about/2.jpg" alt="about-img-2">
                         <span class="about__second-box" id="convert">
-    
+
                         </span>
                     </div>
                 </div>
@@ -326,7 +343,9 @@
                                     You Can Imagine <br> I Can Do
                                 </h3>
                                 <p class="skill__text">
-                                    I am working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional creative personal resume portfolio template Aziz Rakhim
+                                    I am working on a professional, visually sophisticated and technologically
+                                    proficient, responsive and multi-functional creative personal resume portfolio
+                                    template Aziz Rakhim
                                 </p>
                             </div>
                         </div>
@@ -343,7 +362,7 @@
                                     </div>
                                     <div class="html__line">
                                         <div class="html__percent">
-    
+
                                         </div>
                                     </div>
                                 </div>
@@ -358,7 +377,7 @@
                                     </div>
                                     <div class="html__line">
                                         <div class="js-percent">
-    
+
                                         </div>
                                     </div>
                                 </div>
@@ -373,7 +392,7 @@
                                     </div>
                                     <div class="html__line">
                                         <div class="react-percent">
-    
+
                                         </div>
                                     </div>
                                 </div>
@@ -397,188 +416,212 @@
                         Check my portfolio
                     </h3>
                     <ul class="portfolio__list p-0 d-flex flex-wrap justify-content-sm-between">
-                        <li class="portfolio__item">
-                            <img src="https://marketifythemes.net/html/aale/img/portfolio/1.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
-                            <div class="portfolio__wrapper">
-                                <div class="portfolio__shadow" id="convert">
+                        <li class="portfolio__item col-lg-4">
+                            <div class="pp-wrapper">
+                                <img src="https://marketifythemes.net/html/aale/img/portfolio/1.jpg" alt="portfolio"
+                                    class="portfolio__img">
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__shadow" id="convert">
 
-                                </div>
-                                <div class="portfolio__content">
-                                    <div class="p-inner-wrapper">
-                                        <div class="p-inner">
-                                            <img src="https://strend-vue.envytheme.com/_nuxt/img/white-logo.75b255a.png" alt="strend" width="150" height="39">
+                                    </div>
+                                    <div class="portfolio__content">
+                                        <div class="p-inner-wrapper">
+                                            <div class="p-inner">
+                                                <img src="https://strend-vue.envytheme.com/_nuxt/img/white-logo.75b255a.png"
+                                                    alt="strend" width="150" height="39">
+                                            </div>
+                                            <h4 class="p-inner__name text-center">
+                                                Strend
+                                            </h4>
+                                            <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        GitHub
+                                                    </a>
+                                                </li>
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        Website
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <h4 class="p-inner__name text-center">
-                                            Strend
-                                        </h4>
-                                        <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    GitHub
-                                                </a>
-                                            </li>
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    Website
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="portfolio__item">
-                            <img src="https://marketifythemes.net/html/aale/img/portfolio/2.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
-                            <div class="portfolio__wrapper">
-                                <div class="portfolio__shadow" id="convert">
+                        <li class="portfolio__item col-lg-4">
+                            <div class="pp-wrapper">
+                                <img src="https://marketifythemes.net/html/aale/img/portfolio/2.jpg" alt="portfolio"
+                                    class="portfolio__img">
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__shadow" id="convert">
 
-                                </div>
-                                <div class="portfolio__content">
-                                    <div class="p-inner-wrapper">
-                                        <div class="p-inner text-center">
-                                            <img src="https://up-and-down-aziz-rakhim.netlify.app/images/footer-logo.svg" alt="up and down" width="60" height="32">
+                                    </div>
+                                    <div class="portfolio__content">
+                                        <div class="p-inner-wrapper">
+                                            <div class="p-inner text-center">
+                                                <img src="https://up-and-down-aziz-rakhim.netlify.app/images/footer-logo.svg"
+                                                    alt="up and down" width="60" height="32">
+                                            </div>
+                                            <h4 class="p-inner__name text-center">
+                                                Up and down
+                                            </h4>
+                                            <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        GitHub
+                                                    </a>
+                                                </li>
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        Website
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <h4 class="p-inner__name text-center">
-                                            Up and down
-                                        </h4>
-                                        <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    GitHub
-                                                </a>
-                                            </li>
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    Website
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="portfolio__item">
-                            <img src="https://marketifythemes.net/html/aale/img/portfolio/3.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
-                            <div class="portfolio__wrapper">
-                                <div class="portfolio__shadow" id="convert">
+                        <li class="portfolio__item col-lg-4">
+                            <div class="pp-wrapper">
+                                <img src="https://marketifythemes.net/html/aale/img/portfolio/3.jpg" alt="portfolio"
+                                    class="portfolio__img">
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__shadow" id="convert">
 
-                                </div>
-                                <div class="portfolio__content">
-                                    <div class="p-inner-wrapper">
-                                        <div class="p-inner">
-                                            <img src="https://coffeeroaster-aziz-rakhim.netlify.app/images/footer-logo.svg" alt="coffeeroaster" width="236" height="26">
+                                    </div>
+                                    <div class="portfolio__content">
+                                        <div class="p-inner-wrapper">
+                                            <div class="p-inner">
+                                                <img src="https://coffeeroaster-aziz-rakhim.netlify.app/images/footer-logo.svg"
+                                                    alt="coffeeroaster" width="236" height="26">
+                                            </div>
+                                            <h4 class="p-inner__name text-center">
+                                                Coffeeroaster
+                                            </h4>
+                                            <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        GitHub
+                                                    </a>
+                                                </li>
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        Website
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <h4 class="p-inner__name text-center">
-                                            Coffeeroaster
-                                        </h4>
-                                        <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    GitHub
-                                                </a>
-                                            </li>
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    Website
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="portfolio__item">
-                            <img src="https://marketifythemes.net/html/aale/img/portfolio/4.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
-                            <div class="portfolio__wrapper">
-                                <div class="portfolio__shadow" id="convert">
+                        <li class="portfolio__item col-lg-4">
+                            <div class="pp-wrapper">
+                                <img src="https://marketifythemes.net/html/aale/img/portfolio/4.jpg" alt="portfolio"
+                                    class="portfolio__img">
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__shadow" id="convert">
 
-                                </div>
-                                <div class="portfolio__content">
-                                    <div class="p-inner-wrapper">
-                                        <div class="p-inner text-center">
-                                            <img src="https://product-aziz-rakhim.netlify.app/images/logo.svg" alt="product" width="32" height="30">
+                                    </div>
+                                    <div class="portfolio__content">
+                                        <div class="p-inner-wrapper">
+                                            <div class="p-inner text-center">
+                                                <img src="https://product-aziz-rakhim.netlify.app/images/logo.svg"
+                                                    alt="product" width="32" height="30">
+                                            </div>
+                                            <h4 class="p-inner__name text-center">
+                                                Product
+                                            </h4>
+                                            <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        GitHub
+                                                    </a>
+                                                </li>
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        Website
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <h4 class="p-inner__name text-center">
-                                            Product
-                                        </h4>
-                                        <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    GitHub
-                                                </a>
-                                            </li>
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    Website
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="portfolio__item">
-                            <img src="https://marketifythemes.net/html/aale/img/portfolio/5.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
-                            <div class="portfolio__wrapper">
-                                <div class="portfolio__shadow" id="convert">
+                        <li class="portfolio__item col-lg-4">
+                            <div class="pp-wrapper">
+                                <img src="https://marketifythemes.net/html/aale/img/portfolio/5.jpg" alt="portfolio"
+                                    class="portfolio__img">
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__shadow" id="convert">
 
-                                </div>
-                                <div class="portfolio__content">
-                                    <div class="p-inner-wrapper">
-                                        <div class="p-inner">
-                                            <img src="https://bookmark-aziz-rakhim.netlify.app/images/footer-logo.svg" alt="bookmark" width="148" height="25">
+                                    </div>
+                                    <div class="portfolio__content">
+                                        <div class="p-inner-wrapper">
+                                            <div class="p-inner">
+                                                <img src="https://bookmark-aziz-rakhim.netlify.app/images/footer-logo.svg"
+                                                    alt="bookmark" width="148" height="25">
+                                            </div>
+                                            <h4 class="p-inner__name text-center">
+                                                Bookmark
+                                            </h4>
+                                            <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        GitHub
+                                                    </a>
+                                                </li>
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        Website
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <h4 class="p-inner__name text-center">
-                                            Bookmark
-                                        </h4>
-                                        <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    GitHub
-                                                </a>
-                                            </li>
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    Website
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="portfolio__item">
-                            <img src="https://marketifythemes.net/html/aale/img/portfolio/6.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
-                            <div class="portfolio__wrapper">
-                                <div class="portfolio__shadow" id="convert">
+                        <li class="portfolio__item col-lg-4">
+                            <div class="pp-wrapper">
+                                <img src="https://marketifythemes.net/html/aale/img/portfolio/6.jpg" alt="portfolio"
+                                    class="portfolio__img">
+                                <div class="portfolio__wrapper">
+                                    <div class="portfolio__shadow" id="convert">
 
-                                </div>
-                                <div class="portfolio__content">
-                                    <div class="p-inner-wrapper">
-                                        <div class="p-inner text-center">
-                                            <img src="https://litho.themezaa.com/wp-content/uploads/2021/01/logo-parrot-green@2x.png" alt="strend" width="111" height="36">
+                                    </div>
+                                    <div class="portfolio__content">
+                                        <div class="p-inner-wrapper">
+                                            <div class="p-inner text-center">
+                                                <img src="https://litho.themezaa.com/wp-content/uploads/2021/01/logo-parrot-green@2x.png"
+                                                    alt="strend" width="111" height="36">
+                                            </div>
+                                            <h4 class="p-inner__name text-center">
+                                                Litho
+                                            </h4>
+                                            <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        GitHub
+                                                    </a>
+                                                </li>
+                                                <li class="p-inner__item">
+                                                    <a class="p-inner__link" href="#">
+                                                        Website
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <h4 class="p-inner__name text-center">
-                                            Litho
-                                        </h4>
-                                        <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    GitHub
-                                                </a>
-                                            </li>
-                                            <li class="p-inner__item">
-                                                <a class="p-inner__link" href="#">
-                                                    Website
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
                     </ul>
-                 </div>
+                </div>
             </div>
         </section>
 
@@ -598,27 +641,47 @@
                                     My Services
                                 </h3>
                                 <p class="service__text">
-                                    I offer high quality products for competitive prices. My main goal is customer satisfaction, which I obtain through market orientation of ongoing service and support.
+                                    I offer high quality products for competitive prices. My main goal is customer
+                                    satisfaction, which I obtain through market orientation of ongoing service and
+                                    support.
                                 </p>
                             </div>
                         </li>
                         <li class="service__item s-item col-6">
                             <div class="s-item__box d-flex">
                                 <div class="s-item__bg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="438pt" viewBox="0 -19 438.00146 438" width="438pt" class="svg replaced-svg"><path d="m89.804688 360c-22.089844 0-40-17.90625-40-40v-142.265625c-.003907-3.371094.421874-6.734375 1.261718-10h-1.261718c-22.089844 0-40 17.910156-40 40v142.265625c0 22.09375 17.910156 40 40 40h223.800781c18.242187 0 34.171875-12.339844 38.738281-30zm0 0" fill="#d4e1f4"></path><path d="m313.914062 276.632812v20.367188c-.015624 5.332031-1.328124 10.578125-3.828124 15.285156l118.113281 62.160156v-50.179687zm0 0" fill="#d4e1f4"></path><path d="m222.089844 143.3125c-39.574219 0-71.65625-32.082031-71.65625-71.65625s32.082031-71.65625 71.65625-71.65625c39.574218 0 71.65625 32.082031 71.65625 71.65625s-32.082032 71.65625-71.65625 71.65625zm0-123.3125c-28.527344 0-51.65625 23.128906-51.65625 51.65625 0 28.53125 23.128906 51.65625 51.65625 51.65625s51.65625-23.125 51.65625-51.65625c0-28.527344-23.128906-51.65625-51.65625-51.65625zm0 0" fill="#ea4343"></path><path d="m74.566406 124.3125c-29.078125 0-52.65625-23.574219-52.652344-52.65625 0-29.082031 23.574219-52.65625 52.65625-52.65625 29.082032 0 52.65625 23.574219 52.65625 52.65625s-23.578124 52.65625-52.660156 52.65625zm0-85.3125c-18.035156 0-32.65625 14.621094-32.652344 32.65625 0 18.035156 14.621094 32.65625 32.65625 32.65625 18.035157 0 32.65625-14.621094 32.65625-32.65625s-14.621093-32.65625-32.660156-32.65625zm0 0" fill="#ea4343"></path><path d="m433.191406 174.683594c-2.953125-1.800782-6.648437-1.859375-9.660156-.160156l-99.53125 54.765624v-21.554687c0-27.570313-22.820312-49.734375-50.390625-49.734375h-223.804687c-27.425782-.078125-49.726563 22.09375-49.804688 49.519531v142.480469c-.0625 27.554688 22.226562 49.941406 49.78125 50h223.824219c27.574219 0 50.394531-22.429688 50.394531-50v-21.535156l99.582031 54.746094c1.4375.808593 3.0625 1.234374 4.710938 1.234374 1.746093 0 3.457031-.484374 4.945312-1.394531 3.007813-1.816406 4.820313-5.09375 4.761719-8.605469v-191.15625c.039062-3.519531-1.792969-6.792968-4.808594-8.605468zm-159.582031 205.316406h-223.804687c-16.496094-.035156-29.839844-13.433594-29.804688-29.929688v-142.335937c-.050781-16.371094 13.179688-29.683594 29.546875-29.734375h.257813 223.800781c16.542969 0 30.394531 13.191406 30.394531 29.734375v142.265625c0 16.542969-13.851562 30-30.390625 30zm144.390625-22.449219-94-51.898437v-53.550782l94-51.917968zm0 0" fill="#15111e"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="438pt" viewBox="0 -19 438.00146 438"
+                                        width="438pt" class="svg replaced-svg">
+                                        <path
+                                            d="m89.804688 360c-22.089844 0-40-17.90625-40-40v-142.265625c-.003907-3.371094.421874-6.734375 1.261718-10h-1.261718c-22.089844 0-40 17.910156-40 40v142.265625c0 22.09375 17.910156 40 40 40h223.800781c18.242187 0 34.171875-12.339844 38.738281-30zm0 0"
+                                            fill="#d4e1f4"></path>
+                                        <path
+                                            d="m313.914062 276.632812v20.367188c-.015624 5.332031-1.328124 10.578125-3.828124 15.285156l118.113281 62.160156v-50.179687zm0 0"
+                                            fill="#d4e1f4"></path>
+                                        <path
+                                            d="m222.089844 143.3125c-39.574219 0-71.65625-32.082031-71.65625-71.65625s32.082031-71.65625 71.65625-71.65625c39.574218 0 71.65625 32.082031 71.65625 71.65625s-32.082032 71.65625-71.65625 71.65625zm0-123.3125c-28.527344 0-51.65625 23.128906-51.65625 51.65625 0 28.53125 23.128906 51.65625 51.65625 51.65625s51.65625-23.125 51.65625-51.65625c0-28.527344-23.128906-51.65625-51.65625-51.65625zm0 0"
+                                            fill="#ea4343"></path>
+                                        <path
+                                            d="m74.566406 124.3125c-29.078125 0-52.65625-23.574219-52.652344-52.65625 0-29.082031 23.574219-52.65625 52.65625-52.65625 29.082032 0 52.65625 23.574219 52.65625 52.65625s-23.578124 52.65625-52.660156 52.65625zm0-85.3125c-18.035156 0-32.65625 14.621094-32.652344 32.65625 0 18.035156 14.621094 32.65625 32.65625 32.65625 18.035157 0 32.65625-14.621094 32.65625-32.65625s-14.621093-32.65625-32.660156-32.65625zm0 0"
+                                            fill="#ea4343"></path>
+                                        <path
+                                            d="m433.191406 174.683594c-2.953125-1.800782-6.648437-1.859375-9.660156-.160156l-99.53125 54.765624v-21.554687c0-27.570313-22.820312-49.734375-50.390625-49.734375h-223.804687c-27.425782-.078125-49.726563 22.09375-49.804688 49.519531v142.480469c-.0625 27.554688 22.226562 49.941406 49.78125 50h223.824219c27.574219 0 50.394531-22.429688 50.394531-50v-21.535156l99.582031 54.746094c1.4375.808593 3.0625 1.234374 4.710938 1.234374 1.746093 0 3.457031-.484374 4.945312-1.394531 3.007813-1.816406 4.820313-5.09375 4.761719-8.605469v-191.15625c.039062-3.519531-1.792969-6.792968-4.808594-8.605468zm-159.582031 205.316406h-223.804687c-16.496094-.035156-29.839844-13.433594-29.804688-29.929688v-142.335937c-.050781-16.371094 13.179688-29.683594 29.546875-29.734375h.257813 223.800781c16.542969 0 30.394531 13.191406 30.394531 29.734375v142.265625c0 16.542969-13.851562 30-30.390625 30zm144.390625-22.449219-94-51.898437v-53.550782l94-51.917968zm0 0"
+                                            fill="#15111e"></path>
+                                    </svg>
                                 </div>
                                 <div class="s-item__content">
                                     <h3 class="s-item__title">
                                         Website Production
                                     </h3>
                                     <span class="s-item__span">
-                                        Starts from 
+                                        Starts from
                                         <span class="s-item__num" id="convert">
                                             $49
                                         </span>
                                     </span>
                                     <p class="s-item__desc">
-                                        Aziz Rakhim is a leading web develoepr with an awesome design team that creates innovative, effective websites 
+                                        Aziz Rakhim is a leading web develoepr with an awesome design team that creates
+                                        innovative, effective websites
                                     </p>
                                 </div>
                             </div>
@@ -626,20 +689,40 @@
                         <li class="service__item s-item col-6">
                             <div class="s-item__box d-flex">
                                 <div class="s-item__bg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="400pt" viewBox="0 -22 400 400" width="400pt" class="svg replaced-svg"><path d="m50 256.007812v-246.015624c-22.089844 0-40 17.910156-40 40v256.015624c0 22.089844 17.910156 40 40 40h300c22.089844 0 40-17.910156 40-40v-10h-300c-22.089844 0-40-17.910156-40-40zm0 0" fill="#d4e1f4"></path><g fill="#ea4343"><path d="m198.410156 99.574219c-17.421875 0-31.59375-14.398438-31.59375-32.105469s14.171875-32.105469 31.59375-32.105469c17.417969 0 31.589844 14.402344 31.589844 32.105469s-14.171875 32.105469-31.589844 32.105469zm0-44.210938c-6.6875-.292969-12.34375 4.890625-12.632812 11.578125-.292969 6.683594 4.890625 12.339844 11.574218 12.632813 6.6875.292969 12.34375-4.890625 12.636719-11.574219.007813-.175781.011719-.351562.011719-.527344.132812-6.542968-5.050781-11.957031-11.589844-12.109375zm0 0"></path><path d="m127.953125 99.574219c-17.417969 0-31.589844-14.398438-31.589844-32.105469s14.171875-32.105469 31.589844-32.105469 31.59375 14.398438 31.59375 32.105469-14.171875 32.105469-31.59375 32.105469zm0-44.210938c-6.683594-.292969-12.339844 4.890625-12.632813 11.578125-.289062 6.683594 4.894532 12.339844 11.578126 12.632813 6.6875.292969 12.34375-4.890625 12.636718-11.574219.007813-.175781.011719-.351562.011719-.527344.132813-6.542968-5.050781-11.957031-11.59375-12.109375zm0 0"></path><path d="m61.816406 99.574219c-17.417968 0-31.589844-14.398438-31.589844-32.105469s14.171876-32.105469 31.589844-32.105469c17.421875 0 31.59375 14.398438 31.59375 32.105469s-14.171875 32.105469-31.59375 32.105469zm0-44.210938c-6.683594-.289062-12.339844 4.894531-12.628906 11.578125-.292969 6.6875 4.890625 12.339844 11.578125 12.632813 6.683594.292969 12.339844-4.890625 12.632813-11.574219.007812-.175781.011718-.351562.011718-.527344.136719-6.542968-5.050781-11.960937-11.59375-12.109375zm0 0"></path></g><path d="m400 50c0-27.613281-22.386719-50-50-50h-300c-27.613281 0-50 22.386719-50 50v256c0 27.613281 22.386719 50 50 50h300c27.613281 0 50-22.386719 50-50zm-350-30h300c16.558594.015625 29.980469 13.433594 30 29.992188v74.007812h-360v-74.007812c.019531-16.558594 13.441406-29.976563 30-29.992188zm300 316h-300c-16.558594-.015625-29.980469-13.433594-30-29.992188v-162.007812h360v162.007812c-.019531 16.558594-13.441406 29.976563-30 29.992188zm0 0" fill="#15111e"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="400pt" viewBox="0 -22 400 400"
+                                        width="400pt" class="svg replaced-svg">
+                                        <path
+                                            d="m50 256.007812v-246.015624c-22.089844 0-40 17.910156-40 40v256.015624c0 22.089844 17.910156 40 40 40h300c22.089844 0 40-17.910156 40-40v-10h-300c-22.089844 0-40-17.910156-40-40zm0 0"
+                                            fill="#d4e1f4"></path>
+                                        <g fill="#ea4343">
+                                            <path
+                                                d="m198.410156 99.574219c-17.421875 0-31.59375-14.398438-31.59375-32.105469s14.171875-32.105469 31.59375-32.105469c17.417969 0 31.589844 14.402344 31.589844 32.105469s-14.171875 32.105469-31.589844 32.105469zm0-44.210938c-6.6875-.292969-12.34375 4.890625-12.632812 11.578125-.292969 6.683594 4.890625 12.339844 11.574218 12.632813 6.6875.292969 12.34375-4.890625 12.636719-11.574219.007813-.175781.011719-.351562.011719-.527344.132812-6.542968-5.050781-11.957031-11.589844-12.109375zm0 0">
+                                            </path>
+                                            <path
+                                                d="m127.953125 99.574219c-17.417969 0-31.589844-14.398438-31.589844-32.105469s14.171875-32.105469 31.589844-32.105469 31.59375 14.398438 31.59375 32.105469-14.171875 32.105469-31.59375 32.105469zm0-44.210938c-6.683594-.292969-12.339844 4.890625-12.632813 11.578125-.289062 6.683594 4.894532 12.339844 11.578126 12.632813 6.6875.292969 12.34375-4.890625 12.636718-11.574219.007813-.175781.011719-.351562.011719-.527344.132813-6.542968-5.050781-11.957031-11.59375-12.109375zm0 0">
+                                            </path>
+                                            <path
+                                                d="m61.816406 99.574219c-17.417968 0-31.589844-14.398438-31.589844-32.105469s14.171876-32.105469 31.589844-32.105469c17.421875 0 31.59375 14.398438 31.59375 32.105469s-14.171875 32.105469-31.59375 32.105469zm0-44.210938c-6.683594-.289062-12.339844 4.894531-12.628906 11.578125-.292969 6.6875 4.890625 12.339844 11.578125 12.632813 6.683594.292969 12.339844-4.890625 12.632813-11.574219.007812-.175781.011718-.351562.011718-.527344.136719-6.542968-5.050781-11.960937-11.59375-12.109375zm0 0">
+                                            </path>
+                                        </g>
+                                        <path
+                                            d="m400 50c0-27.613281-22.386719-50-50-50h-300c-27.613281 0-50 22.386719-50 50v256c0 27.613281 22.386719 50 50 50h300c27.613281 0 50-22.386719 50-50zm-350-30h300c16.558594.015625 29.980469 13.433594 30 29.992188v74.007812h-360v-74.007812c.019531-16.558594 13.441406-29.976563 30-29.992188zm300 316h-300c-16.558594-.015625-29.980469-13.433594-30-29.992188v-162.007812h360v162.007812c-.019531 16.558594-13.441406 29.976563-30 29.992188zm0 0"
+                                            fill="#15111e"></path>
+                                    </svg>
                                 </div>
                                 <div class="s-item__content">
                                     <h3 class="s-item__title">
                                         Responsive and <br> Mobile Design
                                     </h3>
                                     <span class="s-item__span">
-                                        Starts from 
+                                        Starts from
                                         <span class="s-item__num" id="convert">
                                             $59
                                         </span>
                                     </span>
                                     <p class="s-item__desc">
-                                        Aziz Rakhim is a leading web develoepr with an awesome design team that creates innovative, effective websites 
+                                        Aziz Rakhim is a leading web develoepr with an awesome design team that creates
+                                        innovative, effective websites
                                     </p>
                                 </div>
                             </div>
@@ -647,20 +730,29 @@
                         <li class="service__item s-item col-6">
                             <div class="s-item__box d-flex">
                                 <div class="s-item__bg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="433pt" viewBox="0 0 433.82486 433" width="433pt" class="svg replaced-svg"><path d="m356.199219 187.3125c-5.515625.015625-9.984375 4.484375-10 10v186.902344c-.046875 16.546875-13.449219 29.949218-30 30h-266.199219c-16.546875-.050782-29.953125-13.453125-30-30v-266.203125c.046875-16.546875 13.453125-29.949219 30-30h186.898438c5.523437 0 10-4.476563 10-10 0-5.523438-4.476563-10-10-10h-186.898438c-27.609375.011719-49.9882812 22.390625-50 50v266.203125c.0117188 27.609375 22.390625 49.988281 50 50h266.199219c27.609375-.011719 49.992187-22.390625 50-50v-186.902344c-.015625-5.515625-4.484375-9.984375-10-10zm0 0" fill="#15111e"></path><path d="m379.800781 3.3125c-1.882812-1.882812-4.441406-2.925781-7.101562-2.898438-2.652344.019532-5.191407 1.054688-7.097657 2.898438l-143.203124 143.199219-.398438.402343-.199219.199219c-.199219.300781-.5.601563-.699219.898438 0 .101562-.101562.101562-.101562.203125-.199219.296875-.300781.5-.5.796875-.101562.101562-.101562.203125-.199219.300781-.101562.300781-.199219.5-.300781.800781 0 .101563-.101562.101563-.101562.199219l-25.5 76.902344c-1.222657 3.578125-.292969 7.542968 2.402343 10.199218 1.890625 1.863282 4.441407 2.90625 7.097657 2.898438 1.085937-.019531 2.164062-.1875 3.203124-.5l76.699219-25.597656c.097657 0 .097657 0 .199219-.101563.316406-.089843.621094-.226562.898438-.398437.078124-.011719.148437-.046875.203124-.101563.296876-.199219.699219-.398437 1-.601562.296876-.199219.597657-.5.898438-.699219.101562-.097656.199219-.097656.199219-.199219.101562-.101562.300781-.199219.402343-.398437l143.296876-143.300782c1.875-1.871093 2.925781-4.40625 2.925781-7.050781s-1.050781-5.183593-2.925781-7.050781zm-160.101562 211.199219 14.101562-42.398438 28.300781 28.300781zm60.902343-23.898438-37-37 129.097657-129.101562 37 37zm0 0" fill="#ea4343"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="433pt" viewBox="0 0 433.82486 433"
+                                        width="433pt" class="svg replaced-svg">
+                                        <path
+                                            d="m356.199219 187.3125c-5.515625.015625-9.984375 4.484375-10 10v186.902344c-.046875 16.546875-13.449219 29.949218-30 30h-266.199219c-16.546875-.050782-29.953125-13.453125-30-30v-266.203125c.046875-16.546875 13.453125-29.949219 30-30h186.898438c5.523437 0 10-4.476563 10-10 0-5.523438-4.476563-10-10-10h-186.898438c-27.609375.011719-49.9882812 22.390625-50 50v266.203125c.0117188 27.609375 22.390625 49.988281 50 50h266.199219c27.609375-.011719 49.992187-22.390625 50-50v-186.902344c-.015625-5.515625-4.484375-9.984375-10-10zm0 0"
+                                            fill="#15111e"></path>
+                                        <path
+                                            d="m379.800781 3.3125c-1.882812-1.882812-4.441406-2.925781-7.101562-2.898438-2.652344.019532-5.191407 1.054688-7.097657 2.898438l-143.203124 143.199219-.398438.402343-.199219.199219c-.199219.300781-.5.601563-.699219.898438 0 .101562-.101562.101562-.101562.203125-.199219.296875-.300781.5-.5.796875-.101562.101562-.101562.203125-.199219.300781-.101562.300781-.199219.5-.300781.800781 0 .101563-.101562.101563-.101562.199219l-25.5 76.902344c-1.222657 3.578125-.292969 7.542968 2.402343 10.199218 1.890625 1.863282 4.441407 2.90625 7.097657 2.898438 1.085937-.019531 2.164062-.1875 3.203124-.5l76.699219-25.597656c.097657 0 .097657 0 .199219-.101563.316406-.089843.621094-.226562.898438-.398437.078124-.011719.148437-.046875.203124-.101563.296876-.199219.699219-.398437 1-.601562.296876-.199219.597657-.5.898438-.699219.101562-.097656.199219-.097656.199219-.199219.101562-.101562.300781-.199219.402343-.398437l143.296876-143.300782c1.875-1.871093 2.925781-4.40625 2.925781-7.050781s-1.050781-5.183593-2.925781-7.050781zm-160.101562 211.199219 14.101562-42.398438 28.300781 28.300781zm60.902343-23.898438-37-37 129.097657-129.101562 37 37zm0 0"
+                                            fill="#ea4343"></path>
+                                    </svg>
                                 </div>
                                 <div class="s-item__content">
                                     <h3 class="s-item__title">
                                         Front End Architecture & Design
                                     </h3>
                                     <span class="s-item__span">
-                                        Starts from 
+                                        Starts from
                                         <span class="s-item__num" id="convert">
                                             $69
                                         </span>
                                     </span>
                                     <p class="s-item__desc">
-                                        Aziz Rakhim is a leading web develoepr with an awesome design team that creates innovative, effective websites 
+                                        Aziz Rakhim is a leading web develoepr with an awesome design team that creates
+                                        innovative, effective websites
                                     </p>
                                 </div>
                             </div>
@@ -668,20 +760,50 @@
                         <li class="service__item s-item col-6">
                             <div class="s-item__box d-flex">
                                 <div class="s-item__bg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="467pt" viewBox="-22 0 467 467.1" width="467pt" class="svg replaced-svg"><g fill="#d4e1f4"><path d="m123.652344 125.699219c0-52.851563 42.84375-95.699219 95.699218-95.699219 3.097657 0 6.097657.199219 9.097657.398438-32.085938-25.167969-76.597657-27.246094-110.886719-5.171876-34.292969 22.074219-50.832031 63.449219-41.207031 103.078126 9.625 39.628906 43.300781 68.808593 83.894531 72.695312-23.109375-18.152344-36.605469-45.914062-36.597656-75.300781zm0 0"></path><path d="m219.25 265.199219c11.292969-.007813 22.554688 1.164062 33.601562 3.5-25.121093-15.5-54.085937-23.640625-83.601562-23.5-88.097656.199219-159.398438 70.5-159.199219 166.199219l51-.097657c9.101563-85.300781 76.398438-145.902343 158.199219-146.101562zm0 0"></path><path d="m381.949219 410.601562c0-15.300781 12.402343-27.703124 27.703125-27.703124h.097656c-6.648438-11.699219-20.742188-16.929688-33.414062-12.398438-12.671876 4.527344-20.257813 17.503906-17.988282 30.769531 2.273438 13.261719 13.746094 22.976563 27.203125 23.03125-2.332031-4.191406-3.570312-8.902343-3.601562-13.699219zm0 0"></path><path d="m247.351562 443.398438c.015626-15.289063 12.40625-27.683594 27.699219-27.699219h.101563c-6.652344-11.699219-20.746094-16.929688-33.417969-12.402344-12.671875 4.53125-20.257813 17.507813-17.984375 30.773437 2.269531 13.261719 13.742188 22.976563 27.199219 23.03125-2.363281-4.179687-3.605469-8.898437-3.597657-13.703124zm0 0"></path></g><path d="m169.351562 211.398438c58.375 0 105.699219-47.320313 105.699219-105.699219 0-58.375-47.324219-105.699219-105.699219-105.699219-58.378906 0-105.699218 47.324219-105.699218 105.699219.054687 58.355469 47.34375 105.644531 105.699218 105.699219zm0-191.398438c47.328126 0 85.699219 38.371094 85.699219 85.699219 0 47.332031-38.371093 85.699219-85.699219 85.699219-47.332031 0-85.699218-38.367188-85.699218-85.699219.054687-47.308594 38.390625-85.644531 85.699218-85.699219zm0 0" fill="#15111e"></path><path d="m285.652344 281.5.199218.199219zm0 0" fill="#15111e"></path><path d="m385.652344 358.898438c-20.824219 0-37.703125 16.878906-37.703125 37.703124 0 20.820313 16.878906 37.699219 37.703125 37.699219 20.820312 0 37.699218-16.878906 37.699218-37.699219-.015624-20.816406-16.886718-37.6875-37.699218-37.703124zm0 55.402343c-9.777344 0-17.703125-7.925781-17.703125-17.699219 0-9.777343 7.925781-17.703124 17.703125-17.703124 9.773437 0 17.699218 7.925781 17.699218 17.703124.007813 4.695313-1.855468 9.203126-5.175781 12.523438-3.320312 3.320312-7.828125 5.183594-12.523437 5.175781zm0 0" fill="#15111e"></path><path d="m251.050781 391.699219c-9.042969 0-17.777343 3.269531-24.601562 9.199219l-206.097657.5c2.097657-39.296876 17.398438-75.199219 43.398438-101.898438 27.699219-28.5 65.199219-44.199219 105.5-44.199219h.300781c38.101563-.1875 74.785157 14.441407 102.300781 40.800781.199219.199219.398438.296876.597657.5l-.597657-.601562.699219.601562.199219.199219 7.601562-9.5 5.398438-5.699219-.097656-.101562c-31.101563-29.898438-72.300782-46.300781-116.101563-46.300781h-.398437c-45.800782.101562-88.300782 17.902343-119.800782 50.300781-31.902343 32.699219-49.4023432 77.398438-49.3007808 125.898438.0195313 2.652343 1.0585938 5.195312 2.8984378 7.101562 1.882812 1.882812 4.441406 2.925781 7.101562 2.898438l204.300781-.5c-.636718 2.792968-.96875 5.640624-1 8.5 0 20.824218 16.878907 37.703124 37.699219 37.703124 20.820313 0 37.699219-16.878906 37.699219-37.703124.015625-.800782-.015625-1.601563-.097656-2.398438-1.25-19.847656-17.714844-35.308594-37.601563-35.300781zm0 55.402343c-6.980469-.003906-13.304687-4.105468-16.15625-10.476562-2.851562-6.371094-1.691406-13.820312 2.957031-19.023438 3.382813-3.722656 8.167969-5.859374 13.199219-5.902343 9.335938.003906 17.050781 7.28125 17.601563 16.601562v1.097657c.027344 4.6875-1.8125 9.191406-5.117188 12.515624-3.304687 3.324219-7.796875 5.191407-12.484375 5.1875zm0 0" fill="#15111e"></path><path d="m410.949219 235.300781c-7.777344-6.484375-18.058594-9.128906-28-7.199219l-86.5 14.898438h-.199219c-15.964844 3.136719-27.484375 17.128906-27.5 33.398438v151.203124c0 5.519532 4.476562 10 10 10s10-4.480468 10-10v-151.203124c-.015625-6.652344 4.675781-12.390626 11.199219-13.699219l86.5-14.898438h.203125c4.101562-.773437 8.339844.285157 11.597656 2.898438 3.214844 2.667969 5.082031 6.625 5.101562 10.800781v133.300781c0 5.523438 4.476563 10 10 10 5.523438 0 10-4.476562 10-10v-133.300781c.019532-10.152344-4.535156-19.777344-12.402343-26.199219zm0 0" fill="#ea4343"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="467pt" viewBox="-22 0 467 467.1"
+                                        width="467pt" class="svg replaced-svg">
+                                        <g fill="#d4e1f4">
+                                            <path
+                                                d="m123.652344 125.699219c0-52.851563 42.84375-95.699219 95.699218-95.699219 3.097657 0 6.097657.199219 9.097657.398438-32.085938-25.167969-76.597657-27.246094-110.886719-5.171876-34.292969 22.074219-50.832031 63.449219-41.207031 103.078126 9.625 39.628906 43.300781 68.808593 83.894531 72.695312-23.109375-18.152344-36.605469-45.914062-36.597656-75.300781zm0 0">
+                                            </path>
+                                            <path
+                                                d="m219.25 265.199219c11.292969-.007813 22.554688 1.164062 33.601562 3.5-25.121093-15.5-54.085937-23.640625-83.601562-23.5-88.097656.199219-159.398438 70.5-159.199219 166.199219l51-.097657c9.101563-85.300781 76.398438-145.902343 158.199219-146.101562zm0 0">
+                                            </path>
+                                            <path
+                                                d="m381.949219 410.601562c0-15.300781 12.402343-27.703124 27.703125-27.703124h.097656c-6.648438-11.699219-20.742188-16.929688-33.414062-12.398438-12.671876 4.527344-20.257813 17.503906-17.988282 30.769531 2.273438 13.261719 13.746094 22.976563 27.203125 23.03125-2.332031-4.191406-3.570312-8.902343-3.601562-13.699219zm0 0">
+                                            </path>
+                                            <path
+                                                d="m247.351562 443.398438c.015626-15.289063 12.40625-27.683594 27.699219-27.699219h.101563c-6.652344-11.699219-20.746094-16.929688-33.417969-12.402344-12.671875 4.53125-20.257813 17.507813-17.984375 30.773437 2.269531 13.261719 13.742188 22.976563 27.199219 23.03125-2.363281-4.179687-3.605469-8.898437-3.597657-13.703124zm0 0">
+                                            </path>
+                                        </g>
+                                        <path
+                                            d="m169.351562 211.398438c58.375 0 105.699219-47.320313 105.699219-105.699219 0-58.375-47.324219-105.699219-105.699219-105.699219-58.378906 0-105.699218 47.324219-105.699218 105.699219.054687 58.355469 47.34375 105.644531 105.699218 105.699219zm0-191.398438c47.328126 0 85.699219 38.371094 85.699219 85.699219 0 47.332031-38.371093 85.699219-85.699219 85.699219-47.332031 0-85.699218-38.367188-85.699218-85.699219.054687-47.308594 38.390625-85.644531 85.699218-85.699219zm0 0"
+                                            fill="#15111e"></path>
+                                        <path d="m285.652344 281.5.199218.199219zm0 0" fill="#15111e"></path>
+                                        <path
+                                            d="m385.652344 358.898438c-20.824219 0-37.703125 16.878906-37.703125 37.703124 0 20.820313 16.878906 37.699219 37.703125 37.699219 20.820312 0 37.699218-16.878906 37.699218-37.699219-.015624-20.816406-16.886718-37.6875-37.699218-37.703124zm0 55.402343c-9.777344 0-17.703125-7.925781-17.703125-17.699219 0-9.777343 7.925781-17.703124 17.703125-17.703124 9.773437 0 17.699218 7.925781 17.699218 17.703124.007813 4.695313-1.855468 9.203126-5.175781 12.523438-3.320312 3.320312-7.828125 5.183594-12.523437 5.175781zm0 0"
+                                            fill="#15111e"></path>
+                                        <path
+                                            d="m251.050781 391.699219c-9.042969 0-17.777343 3.269531-24.601562 9.199219l-206.097657.5c2.097657-39.296876 17.398438-75.199219 43.398438-101.898438 27.699219-28.5 65.199219-44.199219 105.5-44.199219h.300781c38.101563-.1875 74.785157 14.441407 102.300781 40.800781.199219.199219.398438.296876.597657.5l-.597657-.601562.699219.601562.199219.199219 7.601562-9.5 5.398438-5.699219-.097656-.101562c-31.101563-29.898438-72.300782-46.300781-116.101563-46.300781h-.398437c-45.800782.101562-88.300782 17.902343-119.800782 50.300781-31.902343 32.699219-49.4023432 77.398438-49.3007808 125.898438.0195313 2.652343 1.0585938 5.195312 2.8984378 7.101562 1.882812 1.882812 4.441406 2.925781 7.101562 2.898438l204.300781-.5c-.636718 2.792968-.96875 5.640624-1 8.5 0 20.824218 16.878907 37.703124 37.699219 37.703124 20.820313 0 37.699219-16.878906 37.699219-37.703124.015625-.800782-.015625-1.601563-.097656-2.398438-1.25-19.847656-17.714844-35.308594-37.601563-35.300781zm0 55.402343c-6.980469-.003906-13.304687-4.105468-16.15625-10.476562-2.851562-6.371094-1.691406-13.820312 2.957031-19.023438 3.382813-3.722656 8.167969-5.859374 13.199219-5.902343 9.335938.003906 17.050781 7.28125 17.601563 16.601562v1.097657c.027344 4.6875-1.8125 9.191406-5.117188 12.515624-3.304687 3.324219-7.796875 5.191407-12.484375 5.1875zm0 0"
+                                            fill="#15111e"></path>
+                                        <path
+                                            d="m410.949219 235.300781c-7.777344-6.484375-18.058594-9.128906-28-7.199219l-86.5 14.898438h-.199219c-15.964844 3.136719-27.484375 17.128906-27.5 33.398438v151.203124c0 5.519532 4.476562 10 10 10s10-4.480468 10-10v-151.203124c-.015625-6.652344 4.675781-12.390626 11.199219-13.699219l86.5-14.898438h.203125c4.101562-.773437 8.339844.285157 11.597656 2.898438 3.214844 2.667969 5.082031 6.625 5.101562 10.800781v133.300781c0 5.523438 4.476563 10 10 10 5.523438 0 10-4.476562 10-10v-133.300781c.019532-10.152344-4.535156-19.777344-12.402343-26.199219zm0 0"
+                                            fill="#ea4343"></path>
+                                    </svg>
                                 </div>
                                 <div class="s-item__content">
                                     <h3 class="s-item__title">
                                         Maintenance and Support
                                     </h3>
                                     <span class="s-item__span">
-                                        Starts from 
+                                        Starts from
                                         <span class="s-item__num" id="convert">
                                             $79
                                         </span>
                                     </span>
                                     <p class="s-item__desc">
-                                        Aziz Rakhim is a leading web develoepr with an awesome design team that creates innovative, effective websites 
+                                        Aziz Rakhim is a leading web develoepr with an awesome design team that creates
+                                        innovative, effective websites
                                     </p>
                                 </div>
                             </div>
@@ -692,7 +814,7 @@
                             </h3>
                             <div class="btn-box__box">
                                 <a class="btn-box__link" href="#contact" id="convert">
-                                    Knock Me 
+                                    Knock Me
                                     <i class='bx bx-envelope'></i>
                                 </a>
                             </div>
@@ -723,7 +845,8 @@
                                 My Resume
                             </h3>
                             <p class="resume__text">
-                                I enjoy every step of the design process, from discussion and collaboration to concept and execution
+                                I enjoy every step of the design process, from discussion and collaboration to concept
+                                and execution
                             </p>
                         </div>
                         <div class="resume__wrapper d-flex">
@@ -736,17 +859,17 @@
                                         <div class="r-wrapper d-flex">
                                             <div class="resume__box col-3">
                                                 <i class='bx bxs-graduation'></i>
-                                            </div> 
+                                            </div>
                                             <div class="resume__desc resume-desc col-6">
-                                             <h3 class="resume-desc__title">
-                                                 Cognitive Sciences
-                                             </h3>
-                                             <p class="resume-desc__text">
-                                                 University of Maine
-                                             </p>
+                                                <h3 class="resume-desc__title">
+                                                    Cognitive Sciences
+                                                </h3>
+                                                <p class="resume-desc__text">
+                                                    University of Maine
+                                                </p>
                                             </div>
                                             <div class="resume__time col-3">
-                                             2018 - 2020
+                                                2018 - 2020
                                             </div>
                                         </div>
                                         <div class="r-text col-9">
@@ -757,17 +880,17 @@
                                         <div class="r-wrapper d-flex">
                                             <div class="resume__box col-3">
                                                 <i class='bx bxs-graduation'></i>
-                                            </div> 
+                                            </div>
                                             <div class="resume__desc resume-desc col-6">
-                                             <h3 class="resume-desc__title">
-                                                 Cognitive Sciences
-                                             </h3>
-                                             <p class="resume-desc__text">
-                                                 University of Maine
-                                             </p>
+                                                <h3 class="resume-desc__title">
+                                                    Cognitive Sciences
+                                                </h3>
+                                                <p class="resume-desc__text">
+                                                    University of Maine
+                                                </p>
                                             </div>
                                             <div class="resume__time col-3">
-                                             2018 - 2020
+                                                2018 - 2020
                                             </div>
                                         </div>
                                         <div class="r-text col-9">
@@ -778,17 +901,17 @@
                                         <div class="r-wrapper d-flex">
                                             <div class="resume__box col-3">
                                                 <i class='bx bxs-graduation'></i>
-                                            </div> 
+                                            </div>
                                             <div class="resume__desc resume-desc col-6">
-                                             <h3 class="resume-desc__title">
-                                                 Cognitive Sciences
-                                             </h3>
-                                             <p class="resume-desc__text">
-                                                 University of Maine
-                                             </p>
+                                                <h3 class="resume-desc__title">
+                                                    Cognitive Sciences
+                                                </h3>
+                                                <p class="resume-desc__text">
+                                                    University of Maine
+                                                </p>
                                             </div>
                                             <div class="resume__time col-3">
-                                             2018 - 2020
+                                                2018 - 2020
                                             </div>
                                         </div>
                                         <div class="r-text col-9">
@@ -806,17 +929,17 @@
                                         <div class="r-wrapper d-flex">
                                             <div class="resume__box col-3">
                                                 <i class='bx bxs-graduation'></i>
-                                            </div> 
+                                            </div>
                                             <div class="resume__desc resume-desc col-6">
-                                             <h3 class="resume-desc__title">
-                                                 Cognitive Sciences
-                                             </h3>
-                                             <p class="resume-desc__text">
-                                                 University of Maine
-                                             </p>
+                                                <h3 class="resume-desc__title">
+                                                    Cognitive Sciences
+                                                </h3>
+                                                <p class="resume-desc__text">
+                                                    University of Maine
+                                                </p>
                                             </div>
                                             <div class="resume__time col-3">
-                                             2018 - 2020
+                                                2018 - 2020
                                             </div>
                                         </div>
                                         <div class="r-text col-9">
@@ -827,17 +950,17 @@
                                         <div class="r-wrapper d-flex">
                                             <div class="resume__box col-3">
                                                 <i class='bx bxs-graduation'></i>
-                                            </div> 
+                                            </div>
                                             <div class="resume__desc resume-desc col-6">
-                                             <h3 class="resume-desc__title">
-                                                 Cognitive Sciences
-                                             </h3>
-                                             <p class="resume-desc__text">
-                                                 University of Maine
-                                             </p>
+                                                <h3 class="resume-desc__title">
+                                                    Cognitive Sciences
+                                                </h3>
+                                                <p class="resume-desc__text">
+                                                    University of Maine
+                                                </p>
                                             </div>
                                             <div class="resume__time col-3">
-                                             2018 - 2020
+                                                2018 - 2020
                                             </div>
                                         </div>
                                         <div class="r-text col-9">
@@ -848,17 +971,17 @@
                                         <div class="r-wrapper d-flex">
                                             <div class="resume__box col-3">
                                                 <i class='bx bxs-graduation'></i>
-                                            </div> 
+                                            </div>
                                             <div class="resume__desc resume-desc col-6">
-                                             <h3 class="resume-desc__title">
-                                                 Cognitive Sciences
-                                             </h3>
-                                             <p class="resume-desc__text">
-                                                 University of Maine
-                                             </p>
+                                                <h3 class="resume-desc__title">
+                                                    Cognitive Sciences
+                                                </h3>
+                                                <p class="resume-desc__text">
+                                                    University of Maine
+                                                </p>
                                             </div>
                                             <div class="resume__time col-3">
-                                             2018 - 2020
+                                                2018 - 2020
                                             </div>
                                         </div>
                                         <div class="r-text col-9">
@@ -873,10 +996,316 @@
             </div>
         </section>
 
+        <!-- RESUME END -->
+        <!-- TESTIMONIAL START -->
+
+        <section id="testimonial">
+            <div class="testimonial d-flex">
+                <div class="testimonial__img-box col-6">
+                    <div class="testimonial__img-holder">
+                        <img src="https://marketifythemes.net/html/aale/img/hero/2.png" alt="testimonial">
+                    </div>
+                </div>
+                <div class="testimonial__content">
+                    <span class="testimonial__entry">                  Testimonial
+                    </span>
+                    <h3 class="testimonial__title">
+                        What People Say
+                    </h3>
+                    <p class="testimonial__text">
+                        <i>
+                            Experienced web developer with nice attitude. Finished my project before the arranged time and it was awesome
+                        </i>
+                    </p>
+                    <div class="customer-box">
+                        <p class="customer-name">
+                            Jessica Parker,
+                            <span class="customer-spec">
+                                Customer
+                            </span>
+                        </p>
+                    </div>
+                    <div class="arrow-box d-flex align-items-center">
+                        <a class="left-arrow" href="#">
+                            <i class='bx bx-arrow-back'></i>
+                        </a>
+                        <a class="left-arrow" href="#">
+                            <i class='bx bx-arrow-back'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="quote">
+                <i class='bx bxs-quote-left'></i>
+            </div>
+            <span class="quote-box">
+
+            </span>
+            <span class="q-black">
+
+            </span>
+        </section>
+
+        <!-- TESTIMONIAL END -->
+        <!-- BLOG START -->
+
+        <section id="blog">
+            <div class="container">
+                <div class="blog">
+                    <div class="blog__appear">
+                        <span class="blog__entry text-center">
+                            Latest Updates
+                        </span>
+                        <h3 class="blog__title text-center m-0">
+                            From My Blog
+                        </h3>
+                        <p class="blog__text text-center">
+                            We offer high quality products for competitive prices. Our main goal is customer satisfaction
+                        </p>
+                    </div>
+                    <ul class="blog__list p-0 m-0">
+                        <li class="blog__item d-flex text-align-center">
+                            <div class="blog__img-box col-4">
+                                <img src="https://marketifythemes.net/html/aale/img/news/1.jpg" alt="blog">
+                            </div>
+                            <div class="blog__content col-5">
+                                <span class="blog__entry blog__type">
+                                    Web Design
+                                </span>
+                                <h4 class="blog__subtitle">
+                                    <a class="blog__reference" href="#">
+                                        How to create simple personal website
+                                    </a>
+                                </h4>
+                                <span class="blog__time">
+                                    November 10, 2021
+                                </span>
+                            </div>
+                            <div class="blog__link-box col-3">
+                                <a class="btn-box__link" href="#contact" id="convert">
+                                    Full Story
+                                </a>
+                            </div>
+                        </li>
+                        <li class="blog__item d-flex text-align-center">
+                            <div class="blog__img-box col-4">
+                                <img src="https://marketifythemes.net/html/aale/img/news/2.jpg" alt="blog">
+                            </div>
+                            <div class="blog__content col-5">
+                                <span class="blog__entry blog__type">
+                                    Development
+                                </span>
+                                <h4 class="blog__subtitle">
+                                    <a class="blog__reference" href="#">
+                                        What is mobile app and web design
+                                    </a>
+                                </h4>
+                                <span class="blog__time">
+                                    October 22, 2021
+                                </span>
+                            </div>
+                            <div class="blog__link-box col-3">
+                                <a class="btn-box__link" href="#contact" id="convert">
+                                    Full Story
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG END -->
+        <!-- NUMERALS START -->
+
+        <section id="numeral">
+            <div class="container">
+                <div class="numeral d-flex align-items-center">
+                    <div class="numeral__project col-4 d-flex justify-content-center">
+                        <div class="numeral__num">
+                            5K
+                        </div>
+                        <div class="numeral__content">
+                            <span class="numeral__title">
+                                JavaScript
+                            </span>
+                            <span class="numeral__title">
+                                Projects
+                            </span>
+                        </div>
+                    </div>
+                    <div class="numeral__project col-4 d-flex justify-content-center">
+                        <div class="numeral__num">
+                            90
+                            <span class="numeral__plus">
+                                +
+                            </span>
+                        </div>
+                        <div class="numeral__content">
+                            <span class="numeral__title">
+                                Digital
+                            </span>
+                            <span class="numeral__title">
+                                Products
+                            </span>
+                        </div>
+                    </div>
+                    <div class="numeral__project col-4 d-flex justify-content-center">
+                        <div class="numeral__num">
+                            300
+                            <span class="numeral__plus">
+                                +
+                            </span>
+                        </div>
+                        <div class="numeral__content">
+                            <span class="numeral__title">
+                                Happy
+                            </span>
+                            <span class="numeral__title">
+                                Clients
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="numeral__a-box">
+
+            </span>
+        </section>
+
+        <!-- NUMERAL -->
+        <!-- CONTACT-P -->
+
+        <section id="contact-p">
+            <span class="contact-p__a-box">
+                
+            </span>
+            <div class="container">
+                <div class="contact-p">
+                    <span class="contact-p__entry text-center">
+                        Get in Touch
+                    </span>
+                    <h3 class="contact-p__title text-center">
+                        Connect with Me with Confidence
+                    </h3>
+                    <div class="contact-p__box d-flex">
+                        <div class="contact-p__info col-6">
+                            <p class="contact-p__text">
+                                Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
+                            </p>
+                            <ul class="contact-p__list p-0 m-0">
+                                <li class="contact-p__item d-flex">
+                                    <div class="contact-p__img-box">
+                                        <i class='bx bx-phone-call'></i>
+                                    </div>
+                                    <div class="contact-p__desc">
+                                        <span class="contact-p__get-in-touch">
+                                            Call me
+                                        </span>
+                                        <span class="contact-p__num">
+                                            +998 95 011 36 33
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="contact-p__item d-flex">
+                                    <div class="contact-p__img-box">
+                                        <i class='bx bxl-gmail'></i>
+                                    </div>
+                                    <div class="contact-p__desc">
+                                        <span class="contact-p__get-in-touch">
+                                            Email
+                                        </span>
+                                        <span class="contact-p__num contact-p__email">
+                                            azizbekrahimjonov@gmail.com
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-p__form">
+                            <form action="https://echo.htmlacademy.ru">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <input type="tel" name="phone" placeholder="Your Phone" required>
+                                <textarea class="text-area" name="message" placeholder="Your message here"></textarea>
+                                <button class="contact-p__btn d-flex align-items-center" type="submit">
+                                    Sumbit Message
+                                    <i class='bx bxl-telegram' ></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script type="text/javascript" src="js/particles.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__logo-part d-flex justify-content-between">
+                    <div class="footer__logo-box">
+                        <a class="footer__logo-link" href="#">
+                            Aziz Rakhim
+                        </a>
+                    </div>
+                    <div class="footer__social d-flex align-items-center">
+                        <span class="footer__connect">
+                            Connect
+                        </span>
+                        <ul class="footer__list d-flex align-items-center m-0 p-0">
+                            <li class="footer__item">
+                                <a href="#" class="footer__social-link">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__social-link">
+                                    <i class='bx bxl-twitter' ></i>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__social-link">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyright d-flex justify-content-between align-items-center">
+                    <p class="footer__c-text m-0">
+                        Designed with love by <a class="footer__c-link" href="#">
+                            Aziz Rakhim
+                        </a> © 2021
+                    </p>
+                    <ul class="footer__c-list p-0 m-0 d-flex align-items-center">
+                        <li class="footer__c-item">
+                            <a href="#" class="footer__n-link">
+                                Terms & Condition
+                            </a>
+                        </li>
+                        <li class="footer__c-item">
+                            <a href="#" class="footer__n-link">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="footer__c-item">
+                            <a href="#" class="footer__n-link">
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FINISHED FOOTER -->
+
     <script src="js/main.js"></script>
 </body>
+
 </html>
