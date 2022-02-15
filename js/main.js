@@ -138,26 +138,26 @@ ScrollReveal({
   reset: true,
   distance: '100px',
   duration: 2500,
-  delay: 100
+  delay: 70
 });
 
-ScrollReveal().reveal('.about__left-img, .skill-content', {delay: 100, origin: 'left'});
+ScrollReveal().reveal('.about__left-img, .skill-content', {delay: 70, origin: 'left'});
 
-ScrollReveal().reveal('.about__center, .resume-cover, .blog__appear', {delay: 100, origin: 'top'});
+ScrollReveal().reveal('.about__center, .resume-cover, .blog__appear', {delay: 70, origin: 'top'});
 
-ScrollReveal().reveal('.about__right, .skill__stats, .portfolio', {delay: 100, origin: 'bottom'});
+ScrollReveal().reveal('.about__right, .skill__stats, .portfolio', {delay: 70, origin: 'bottom'});
 
-ScrollReveal().reveal('.testimonial__img-holder, .blog__item:first-child', {delay: 100, origin: 'left'});
+ScrollReveal().reveal('.testimonial__img-holder, .blog__item:first-child', {delay: 70, origin: 'left'});
 
-ScrollReveal().reveal('.testimonial__content, .blog__item:last-child', {delay: 100, origin: 'right'});
+ScrollReveal().reveal('.testimonial__content, .blog__item:last-child', {delay: 70, origin: 'right'});
 
-ScrollReveal().reveal('.portfolio__item', {delay: 100, origin: 'bottom', interval: 100});
+ScrollReveal().reveal('.portfolio__item', {delay: 70, origin: 'bottom', interval: 70});
 
-ScrollReveal().reveal('.service__item:nth-child(odd)', {delay: 100, origin: 'left', interval: 100});
+ScrollReveal().reveal('.service__item:nth-child(odd)', {delay: 70, origin: 'left', interval: 70});
 
-ScrollReveal().reveal('.service__item:nth-child(even)', {delay: 100, origin: 'right', interval: 100});
+ScrollReveal().reveal('.service__item:nth-child(even)', {delay: 70, origin: 'right', interval: 70});
 
-ScrollReveal().reveal('.resume__list-intro, .numeral__project', {delay: 100, origin: 'bottom', interval: 300});
+ScrollReveal().reveal('.resume__list-intro, .numeral__project', {delay: 70, origin: 'bottom', interval: 300});
 
 // SCROLL REVEAL END
 

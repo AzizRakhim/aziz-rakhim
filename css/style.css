@@ -265,9 +265,14 @@ body{
         opacity: 1;
     }
 
-    100%{
+    90%{
         transform: rotateX(360deg);
         opacity: 1;
+    }
+
+    100%{
+        transform: rotateX(360deg);
+        opacity: 0;
     }
 }
 
